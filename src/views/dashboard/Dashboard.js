@@ -22,9 +22,14 @@ const WidgetsBrand = lazy(() => import('../widgets/WidgetsBrand.js'))
 const Dashboard = () => {
   return (
     <>
-      <WidgetsDropdown />
+      <CRow>
+        <CCol md="12">
+          <h2>I am here!!!</h2>
+        </CCol>
+      </CRow>
+      <WidgetsDropdown />      
       <CCard>
-        <CCardBody>
+        <CCardBody>          
           <CRow>
             <CCol sm="5">
               <h4 id="traffic" className="card-title mb-0">Traffic</h4>
