@@ -200,8 +200,8 @@ const UserRegister = () => {
                                                         <CRow>
                                                         <CCol sm={3} >
                                                         <div className="form-check">
-                                                            <input className="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="yes" checked />
-                                                            <label className="form-check-label" for="exampleRadios1">
+                                                            <input className="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="yes" defaultChecked />
+                                                            <label className="form-check-label" htmlFor="exampleRadios1">
                                                                 Yes
                                                             </label>
                                                         </div>
@@ -209,7 +209,7 @@ const UserRegister = () => {
                                                         <CCol sm={2}>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="never" />
-                                                            <label className="form-check-label" for="exampleRadios2">
+                                                            <label className="form-check-label" htmlFor="exampleRadios2">
                                                                 Never
                                                             </label>
                                                         </div>
