@@ -57,13 +57,13 @@ const Users = () => {
   const usersData = users
   const fields = [
     { key: 'name', _style: { width: '30%' } }, 
-    { key: 'username', _style: { width: '20%' } },
+    { key: 'username', _style: { width: '22%' } },
     { key: 'profile', _style: { width: '20%'} },
     { key: 'status', _style: { width: '15%'} },
     {
       key: 'show_details',
       label: '',
-      _style: { width: '15%' },
+      _style: { width: '13%' },
       sorter: false,
       filter: false
     }
@@ -132,7 +132,7 @@ const Users = () => {
               activePage={page}
               clickableRows
               tableFilterValue={statusName}
-              dark={1}
+              dark={true}
               scopedSlots = {{
                   'status':
                   (item)=>(
@@ -147,14 +147,16 @@ const Users = () => {
                       return (
                       <td className="py-2">
                         <CButton size="sm" color="info"
+                          title="Edit"
                           onClick={()=>goEdit(item.id)}
                           >
-                          Edit
+                          <CIcon name="cil-pencil"/>
                         </CButton>
                         <CButton size="sm" color="danger" className="ml-1"
+                          title="Delete"
                           onClick={()=>goDelete(item.id)}
                           >
-                          Delete
+                          <CIcon name="cil-trash"/>                          
                         </CButton>                        
                       </td>
                       )

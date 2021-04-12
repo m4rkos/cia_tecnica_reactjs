@@ -73,7 +73,8 @@ const UserRegister = () => {
                                                             type="text"
                                                             id="nf-usermail"
                                                             name="nf-usermail"
-                                                            placeholder="Enter Username.."                                        
+                                                            placeholder="Enter Username.."        
+                                                            required                                
                                                         />
                                                         <CFormText className="help-block">Please enter your username</CFormText>
                                                     </CCol>
@@ -92,6 +93,7 @@ const UserRegister = () => {
                                                             id="nf-firstname"
                                                             name="nf-firstname"
                                                             placeholder="First Name"                                        
+                                                            required
                                                         />
                                                     </CCol>    
                                                     <CCol sm="6">
@@ -99,7 +101,8 @@ const UserRegister = () => {
                                                             type="text"
                                                             id="nf-lastname"
                                                             name="nf-lastname"
-                                                            placeholder="Last Name"                                        
+                                                            placeholder="Last Name"     
+                                                            required                                   
                                                         />                                    
                                                     </CCol>    
                                                 </CRow>                                                                       
@@ -256,7 +259,7 @@ const UserRegister = () => {
                                     </CRow>
                                     <div className="text-right">
                                         <CButton className="btn btn-outline-danger">Cancel</CButton>
-                                        <CButton color="primary" className="pd-left">Save</CButton>
+                                        <CButton color="primary" className="pd-left" type="submit">Save</CButton>
                                     </div>
                                 </div>
                             </CTabPane>
